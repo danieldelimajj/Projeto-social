@@ -8,7 +8,7 @@
 html, body {
   height: 100vh;
   width: 100vw;
-  background-color: 
+  
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 main {
   position: relative;
   height: 100vh;
-  background-color:
+  overflow: hidden;
 }
 
 section#telefone {
@@ -28,8 +28,8 @@ section#telefone {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50% );
-  height: 627px;
-  width: 311px;
+  height: 631px;
+  width: 312px;
   background:url('../imagens/frame-iphone.png');
   
 }
@@ -41,5 +41,22 @@ iframe#tela {
   width: 269px;
   height: 471px;
   
-
 }
+  
+section#redes-sociais img {
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 20px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+  box-sizing: border-box;
+} 
+
+section#redes-sociais img:hover {
+  border: 2px solid rgba(255, 255, 255, 0.637); /*Aplica a borda na imagem*/
+  transform: translate(-2px, -2px); /*Recua a imagem com píxel negativo para fazer um efeito de movimento em direção à esquerda*/
+  transition: transform .5s; /*Faz uma movimentação mais suave dos botões*/
+}
+
